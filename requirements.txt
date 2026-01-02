@@ -1,0 +1,16 @@
+# Web & Giao diện
+flask
+flask-socketio
+
+# Nhận diện Giọng nói (MLP + MFCC)
+sounddevice
+librosa
+scikit-learn
+joblib
+
+# Nhận diện Khuôn mặt
+deepface
+opencv-python
+
+# STT
+faster-whisper
