@@ -2,7 +2,7 @@ import google.generativeai as genai
 from datetime import datetime
 
 # CẤU HÌNH GEMINI
-GOOGLE_API_KEY = "AIzaSyDD2fXjIVJmvcoq9U_EwyhiPn73hsok42k"
+GOOGLE_API_KEY = "..."
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-flash-latest')
 
@@ -20,4 +20,5 @@ def ask_gemini(text):
         response = model.generate_content(prompt)
         return response.text.strip()
     except Exception as e:
+
         return f"Xin lỗi, não bộ đang mất kết nối. Lỗi: {e}"
